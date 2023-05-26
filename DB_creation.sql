@@ -3,30 +3,34 @@ CREATE DATABASE online_game_shop;
 use online_game_shop;
 
 CREATE TABLE Game(
-    id  PRIMARY KEY NOT NULL,
+    id int NOT NULL,
     title varchar(50),
     genre varchar(50),
     number_of_players int,
     price double, 
-    age_range int   
+    age_range int,
+    PRIMARY KEY(id)
 );
-
 
 
 CREATE TABLE Gamer(
     id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
     name varchar(50),
     age int,
-    nacionality varchar(50)
+    nationality varchar(50)
 );
 
+
 CREATE TABLE Review (
-    id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    gamer_id int REFERENCES gamer(id),
-    game_id int REFERENCES game(id),
+    id int NOT NULL AUTO_INCREMENT,
+    gamer_id int,
+    game_id int,
     message varchar(200),
-    rating int
+    rating int,
+    PRIMARY KEY(id),
+    FOREIGN KEY(gamer_id) REFERENCES Gamer(id)
 );
+
 
 CREATE TABLE Purchase (
     id int PRIMARY KEY NOT NULL AUTO_INCREMENT,

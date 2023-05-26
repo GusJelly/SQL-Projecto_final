@@ -11,12 +11,14 @@ CREATE TABLE Game (
     age_range INT   
 );
 
+
 CREATE TABLE Gamer (
     id INT PRIMARY KEY NOT NULL IDENTITY(1,1),
     name VARCHAR(50),
     age INT,
     nationality VARCHAR(50)
 );
+
 
 CREATE TABLE Review (
     id INT PRIMARY KEY NOT NULL IDENTITY(1,1),
@@ -25,6 +27,7 @@ CREATE TABLE Review (
     message VARCHAR(200),
     rating INT
 );
+
 
 CREATE TABLE Purchase (
     id INT PRIMARY KEY NOT NULL IDENTITY(1,1),
