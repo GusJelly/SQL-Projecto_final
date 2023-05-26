@@ -33,9 +33,12 @@ CREATE TABLE Review (
 
 
 CREATE TABLE Purchase (
-    id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    gamer_id int REFERENCES gamer(id),
-    game_id int REFERENCES game(id),
+    id int NOT NULL AUTO_INCREMENT,
+    gamer_id int,
+    game_id int,
     price int,
-    purchase_date varchar(10)
+    purchase_date varchar(10),
+    PRIMARY KEY(id),
+    FOREIGN KEY(gamer_id) REFERENCES Gamer(id),
+    FOREIGN KEY(game_id) REFERENCES Game(id)
 );
