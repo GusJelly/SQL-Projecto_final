@@ -116,5 +116,3 @@ INSERT INTO Purchase (gamer_id ,game_id ,price ,purchase_date )VALUES(6 ,2 ,59.9
 INSERT INTO Purchase (gamer_id ,game_id ,price ,purchase_date )VALUES(7 ,3 ,26.95 ,'2023-06-25' );
 INSERT INTO Purchase (gamer_id ,game_id ,price ,purchase_date )VALUES(8 ,3 ,26.95 ,'2023-06-26' );
 INSERT INTO Purchase (gamer_id ,game_id ,price ,purchase_date )VALUES(9 ,3 ,26.95 ,'2023-06-27' );
-
-
