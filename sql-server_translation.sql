@@ -49,16 +49,16 @@ GO
 
 -- Inserts for the database:
 -- Game
-INSERT INTO Game (id, title, genre, number_of_players, price, age_range) VALUES( 1, 'Super Mario Bros'   , 'Platformer'          , 2  , 59.99, 3 );
-INSERT INTO Game (id, title, genre, number_of_players, price, age_range) VALUES( 2, 'The Legend of Zelda', 'Action-adventure'    , 1  , 59.99, 10);
-INSERT INTO Game (id, title, genre, number_of_players, price, age_range) VALUES( 3, 'Minecraft'          , 'Sandbox'             , 8  , 26.95, 7 );
-INSERT INTO Game (id, title, genre, number_of_players, price, age_range) VALUES( 4, 'Fortnite'           , 'Battle Royale'       , 100, 0.00 , 12);
-INSERT INTO Game (id, title, genre, number_of_players, price, age_range) VALUES( 5, 'Overwatch'          , 'First-person shooter', 12 , 39.99, 12);
-INSERT INTO Game (id, title, genre, number_of_players, price, age_range) VALUES( 6, 'The Sims'           , 'Life simulation'     , 1  , 39.99, 12);
-INSERT INTO Game (id, title, genre, number_of_players, price, age_range) VALUES( 7, 'FIFA'               , 'Sports'              , 4  , 59.99, 3 );
-INSERT INTO Game (id, title, genre, number_of_players, price, age_range) VALUES( 8, 'NBA2K'              , 'Sports'              , 4  , 59.99, 3 );
-INSERT INTO Game (id, title, genre, number_of_players, price, age_range) VALUES( 9, 'Call of Duty'       , 'First-person shooter', 12 , 59.99, 17);
-INSERT INTO Game (id, title, genre, number_of_players, price, age_range) VALUES(10, 'Grand Theft Auto'   , 'Action-adventure'    , 1  , 59.99, 18);
+INSERT INTO Game (title, genre, number_of_players, price, age_range) VALUES('Super Mario Bros'   , 'Platformer'          , 2  , 59.99, 3 );
+INSERT INTO Game (title, genre, number_of_players, price, age_range) VALUES('The Legend of Zelda', 'Action-adventure'    , 1  , 59.99, 10);
+INSERT INTO Game (title, genre, number_of_players, price, age_range) VALUES('Minecraft'          , 'Sandbox'             , 8  , 26.95, 7 );
+INSERT INTO Game (title, genre, number_of_players, price, age_range) VALUES('Fortnite'           , 'Battle Royale'       , 100, 0.00 , 12);
+INSERT INTO Game (title, genre, number_of_players, price, age_range) VALUES('Overwatch'          , 'First-person shooter', 12 , 39.99, 12);
+INSERT INTO Game (title, genre, number_of_players, price, age_range) VALUES('The Sims'           , 'Life simulation'     , 1  , 39.99, 12);
+INSERT INTO Game (title, genre, number_of_players, price, age_range) VALUES('FIFA'               , 'Sports'              , 4  , 59.99, 3 );
+INSERT INTO Game (title, genre, number_of_players, price, age_range) VALUES('NBA2K'              , 'Sports'              , 4  , 59.99, 3 );
+INSERT INTO Game (title, genre, number_of_players, price, age_range) VALUES('Call of Duty'       , 'First-person shooter', 12 , 59.99, 17);
+INSERT INTO Game (title, genre, number_of_players, price, age_range) VALUES('Grand Theft Auto'   , 'Action-adventure'    , 1  , 59.99, 18);
 GO
 
 -- Gamer
@@ -119,4 +119,3 @@ INSERT INTO Purchase (gamer_id, game_id, price, purchase_date) VALUES(6, 2, 59.9
 INSERT INTO Purchase (gamer_id, game_id, price, purchase_date) VALUES(7, 3, 26.95, '2023-06-25');
 INSERT INTO Purchase (gamer_id, game_id, price, purchase_date) VALUES(8, 3, 26.95, '2023-06-26');
 INSERT INTO Purchase (gamer_id, game_id, price, purchase_date) VALUES(9, 3, 26.95, '2023-06-27');
-
