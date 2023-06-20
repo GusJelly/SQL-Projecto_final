@@ -5,7 +5,7 @@ USE online_game_shop;
 GO
 
 CREATE TABLE Game(
-    id int NOT NULL,
+    id int NOT NULL IDENTITY(1,1),
     title varchar(50),
     genre varchar(50),
     number_of_players int,
